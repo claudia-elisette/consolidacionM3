@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat de Soporte</title>
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/3b026a5594.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- mi css -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
+
 <body>
     <!-------- Barra de navegación ------->
-    <nav>
-        <ul>
-            <li><a href="">Página Principal</a></li>
-            <li><a href="">Preguntas Frecuentes</a></li>
-            <li><a href="">Manuales y tutoriales</a></li>
-            <li><a href="">Noticias</a></li>
-            <li><a href="">Calendario</a></li>
-            <li><a href="">Administración de perfil de usuario</a></li>
-            <li><a href="">Organigrama de la empresa</a></li>
-            <li><a href="">Chat para vendedores y equipo de soporte</a></li>
-            <li><a href="">Icono Desplegable</a></li>
+    <nav class="navBar">
+
+        <div class="navBar__title"><a href="">NIXXEN</a></div>
+
+        <ul class="navBar__menu">
+            <li class="navBar__item"><a href="" title="Preguntas Frecuentes"><i class="fa-solid fa-question"></i></a></li>
+            <li class="navBar__item"><a href="" title="Manuales y Tutoriales"><i class="fa-solid fa-book-open"></i></a></li>
+            <li class="navBar__item"><a href="" title="Noticias"><i class="fa-regular fa-newspaper"></i></a></li>
+            <li class="navBar__item"><a href="" title="Calendario"><i class="fa-regular fa-calendar-days"></i></a></li>
+            <li class="navBar__item"><a href="" title="Organigrama"><i class="fa-solid fa-user-tie"></i></a></li>
+            <li class="navBar__item"><a href="" title="Mi Perfil"><i class="fa-solid fa-sitemap"></i></a></li>
+            <li class="navBar__item"><a href="" title="Chat de Soporte"><i class="fa-solid fa-headset"></i></a></li>
         </ul>
+
+        <div class="navBar__dropdown">
+            <button class="navBar__dropdown-btn" onmouseover="showNavbar()"><i class="fa-solid fa-ellipsis"></i></button>
+            <div class="navBar__dropdown-content" id="colapsable" onmouseover="showNavbar()" onmouseout="hideNavbar()">
+                <a href="" class="navBar_dropdown-item">Preguntas Frecuentes</a>
+                <a href="" class="navBar_dropdown-item">Manuales y Tutoriales</a>
+                <a href="" class="navBar_dropdown-item">Noticias</a>
+                <a href="" class="navBar_dropdown-item">Calendario</a>
+                <a href="" class="navBar_dropdown-item">Organigrama</a>
+                <a href="" class="navBar_dropdown-item">Mi Perfil</a>
+                <a href="" class="navBar_dropdown-item">Chat de Soporte</a>
+            </div>
+
+        </div>
     </nav>
     <!----- Conversaciones recientes ----->
     <div>
@@ -66,5 +90,18 @@
         <li><a href="">Enviar</a></li>
        </ul>
     </div>
+
+
+
+
+
+
+
+
+
+
+<script src="assets/JS/script.js"></script>
+    
 </body>
+
 </html>

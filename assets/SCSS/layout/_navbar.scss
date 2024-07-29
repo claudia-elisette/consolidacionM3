@@ -1,0 +1,107 @@
+/*-------NAVBAR--------*/
+
+.navBar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 3.5rem;
+    width: 100vw;
+    background-color: $bear-brown;
+
+    &__title{
+        width: 30%;
+        align-self: flex-start;
+        padding-left: 0.625rem;
+
+        a{ 
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: $sakura-pink;
+            text-decoration: none;
+        }
+        
+    }
+
+    
+    &__menu{
+        display: none;
+        width: 70%;
+        list-style: none;
+
+        @include respond-to($bp-lg){
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+
+    &__item{
+
+        a{
+           color: $sakura-pink;
+           text-decoration: none;
+           font-size: 2.1875rem;
+           padding: 0.625rem;
+           margin: 0.3125rem;
+           border-radius: 0.625rem;
+        }
+
+        a:hover{
+            background-color: $bear-brown-shadow;
+        }
+
+    }
+
+    &__dropdown{
+        width: 40%;
+        align-self: center;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+
+        &-btn{
+            background-color: $bear-brown;
+            color: $sakura-pink;
+            align-self: flex-end;
+            font-size: 25px;
+            padding: 0.3125rem 0.625rem;
+            border: none;
+            border-radius: 0.3125rem;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $bear-brown-shadow;
+            }
+
+        }
+
+
+        &-content{
+            display: none;
+            background-color: $koi-red;
+            width: 100%;
+            padding: 0.3125rem;
+            font-size: 0.875rem;
+            box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+
+            a{
+                color: $sakura-pink;
+                text-decoration: none;
+                width: 100%;
+                text-align: right;
+
+                &:hover{
+                    background-color: $koi-red-shadow;
+                }
+
+            }
+
+        }
+
+        @include respond-to($bp-lg){
+            display: none;
+        }
+
+    }
+
+}
