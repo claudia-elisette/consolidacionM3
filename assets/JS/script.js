@@ -1,9 +1,17 @@
 
 function showNavbar(){
-    document.getElementById("colapsable").style.display = "flex";
-    document.getElementById("colapsable").style.flexDirection= "column";
+    document.getElementById("navBar-colapsable").style.display = "flex";
+    document.getElementById("navBar-colapsable").style.flexDirection= "column";
 }
 
 function hideNavbar(){
-    document.getElementById("colapsable").style.display = "none";
+    document.getElementById("navBar-colapsable").style.display = "none";
+}
+
+
+function showSection(){
+    document.getElementById("section-colapsable").style.display = "block"
+}
+function hideSection(){
+    document.getElementById("section-colapsable").style.display = "none"
 }

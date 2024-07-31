@@ -1,0 +1,17 @@
+.btn{
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+
+    &-1{
+        background-color: $pond-green-light;
+    }
+
+    &-2{
+        background-color: $koi-red-light;
+    }
+
+}
+

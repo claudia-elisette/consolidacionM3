@@ -18,7 +18,9 @@
     <!-------- Barra de navegación ------->
     <nav class="navBar">
 
-        <div class="navBar__title"><a href="">NIXXEN</a></div>
+        <div class="navBar__title">
+            <a href="">NIXXEN</a>
+        </div>
 
         <ul class="navBar__menu">
             <li class="navBar__item"><a href="" title="Preguntas Frecuentes"><i class="fa-solid fa-question"></i></a></li>
@@ -31,8 +33,8 @@
         </ul>
 
         <div class="navBar__dropdown">
-            <button class="navBar__dropdown-btn" onmouseover="showNavbar()"><i class="fa-solid fa-ellipsis"></i></button>
-            <div class="navBar__dropdown-content" id="colapsable" onmouseover="showNavbar()" onmouseout="hideNavbar()">
+            <button class="navBar__dropdown-btn" onmouseover="showNavbar()" onmouseout="hideNavbar()"><i class="fa-solid fa-ellipsis"></i></button>
+            <div class="navBar__dropdown-content" id="navBar-colapsable" onmouseover="showNavbar()" onmouseout="hideNavbar()">
                 <a href="" class="navBar_dropdown-item">Preguntas Frecuentes</a>
                 <a href="" class="navBar_dropdown-item">Manuales y Tutoriales</a>
                 <a href="" class="navBar_dropdown-item">Noticias</a>
@@ -41,20 +43,125 @@
                 <a href="" class="navBar_dropdown-item">Mi Perfil</a>
                 <a href="" class="navBar_dropdown-item">Chat de Soporte</a>
             </div>
+        </div>
+
+    </nav>
+
+    <!----- Conversaciones recientes ----->
+
+    <section class="section">
+        <div class="section__name">
+            <a href="">Chat para vendedores y Soporte</a>
+        </div>
+
+        <div class="section__chat">
+
+            <div class="section__searcher">
+                <div class="section__input">
+                    <input type="text" placeholder="Buscar..." >
+                </div>
+                <div class="section__filter">
+                    <button class="btn btn-1">Leídas</button>
+                    <button class="btn btn-2">No Leídas</button>
+                    <button class="btn btn-3">Grupos</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img"><img src="assets/IMG/perfil/maria.jfif" alt=""></div>
+                <div class="card__main">
+                    <div class="card__name">María Pineda</div>
+                    <div class="card__date">18:09</div>
+                    <div class="card__text">Bueno, avisame cuando sepas!</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img"><img src="assets/IMG/perfil/valeria.jfif" alt=""></div>
+                <div class="card__main">
+                    <div class="card__name">Valeria Bolaño</div>
+                    <div class="card__date">17:05</div>
+                    <div class="card__text">Te espero mañana entonces</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img"><img src="assets/IMG/perfil/denisse.jfif" alt=""></div>
+                <div class="card__main">
+                    <div class="card__name">Denisse Soto</div>
+                    <div class="card__date">10:04</div>
+                    <div class="card__text">Ya si, yo le digo. Tranquiii</div>
+                </div>  
+            </div>
+
+            <div class="card">
+                <div class="card__img"><img src="assets/IMG/perfil/jose.jfif" alt=""></div>
+                <div class="card__main">
+                    <div class="card__name">José Saavedra</div>
+                    <div class="card__date">30/07/2024</div>
+                    <div class="card__text">oka</div>
+                </div>
+            </div>
 
         </div>
-    </nav>
-    <!----- Conversaciones recientes ----->
-    <div>
-        <div>Busqueda</div>
-        <div>Filtro conversaciones</div>
-        <div>
-            <div>Foto Perfil</div>
-            <div>Nombre</div>
-            <div>Último mensaje</div>
-            <div>Hora/Fecha</div>
+
+        <div class="section__dropdown">
+            <button class="section__dropdown-btn" onmouseover="showSection()" onmouseout="hideSection()"><i class="fa-solid fa-grip-lines"></i></button>
+            <div class="section__dropdown-content" id="section-colapsable" onmouseover="showSection()" onmouseout="hideSection()">
+
+                <div class="section__searcher">
+                    <div class="section__input">
+                        <input type="text" placeholder="Buscar..." >
+                    </div>
+                    <div class="section__filter">
+                        <button class="btn btn-1">Leídas</button>
+                        <button class="btn btn-2">No Leídas</button>
+                        <button class="btn btn-3">Grupos</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card__img"><img src="assets/IMG/perfil/maria.jfif" alt=""></div>
+                    <div class="card__main">
+                        <div class="card__name">María Pineda</div>
+                        <div class="card__date">18:09</div>
+                        <div class="card__text">Bueno, avisame cuando sepas! La solange está apurada.</div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card__img"><img src="assets/IMG/perfil/valeria.jfif" alt=""></div>
+                    <div class="card__main">
+                        <div class="card__name">Valeria Bolaño</div>
+                        <div class="card__date">17:05</div>
+                        <div class="card__text">Te espero mañana entonces</div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card__img"><img src="assets/IMG/perfil/denisse.jfif" alt=""></div>
+                    <div class="card__main">
+                        <div class="card__name">Denisse Soto</div>
+                        <div class="card__date">10:04</div>
+                        <div class="card__text">Ya si, yo le digo. Tranquiii</div>
+                    </div>  
+                </div>
+    
+                <div class="card">
+                    <div class="card__img"><img src="assets/IMG/perfil/jose.jfif" alt=""></div>
+                    <div class="card__main">
+                        <div class="card__name">José Saavedra</div>
+                        <div class="card__date">30/07/2024</div>
+                        <div class="card__text">oka</div>
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
-    </div>
+    </section>
+
+    
     <!-------- Conversacion actual ------->
     <div>
         <div>Foto de perfil</div>

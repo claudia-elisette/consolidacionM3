@@ -58,6 +58,7 @@
         display: flex;
         flex-flow: column;
         align-items: flex-start;
+        position: relative;
 
         &-btn{
             background-color: $bear-brown;

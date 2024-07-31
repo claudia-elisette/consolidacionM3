@@ -1,0 +1,73 @@
+.section{
+
+    display: flex;
+    flex-flow: column wrap;
+
+    &__name{
+        width: 100%;
+        padding: 5px;
+        background-color: $lake-blue;
+        text-align: center;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &__chat{
+        width: 40%;
+        max-width: 500px;
+        height: 100vh;
+        display: none;
+        padding-right: 10px;
+        box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+        
+
+        @include respond-to($bp-lg){
+            display: block;
+        }
+    }
+
+    &__dropdown{
+        width: 100%;
+        box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+
+        &-btn{
+            width: 100%;
+            border: none;
+            padding: 5px;
+            background-color: $lake-blue;
+            color: white;
+
+            &:hover{
+                background-color: $lake-blue-shadow;
+            }
+        }
+
+        &-content{
+            display: none;
+        }
+
+        @include respond-to($bp-lg){
+            display: none;
+        }
+    }
+
+    &__input{
+        width: 100%;
+        padding: 5px;
+        
+        input{
+            width: 100%;
+            height: 1.875rem;
+            border-radius: 0.3125rem;
+        }
+    }
+
+    &__filter{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

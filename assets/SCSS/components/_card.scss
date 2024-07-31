@@ -1,0 +1,49 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    
+    &__img{
+        width: 15%;
+        text-align: center;
+
+        img{ 
+            height: 50px;
+            width: 50px;
+            border-radius: 50px; 
+        }
+    }
+
+
+    &__main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 83%;
+    }
+
+    &__name{
+        width: 80%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    &__date{
+        width: 20%;
+        text-align: end;
+        font-size: 0.9rem;
+    }
+
+    &__text{
+        width: 100%;
+    }
+
+    &:hover{
+        background-color: rgba(129, 125, 125, 0.514);
+    }
+
+
+}
