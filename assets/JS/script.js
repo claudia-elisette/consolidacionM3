@@ -1,4 +1,3 @@
-
 function showNavbar(){
     document.getElementById("navBar-colapsable").style.display = "flex";
     document.getElementById("navBar-colapsable").style.flexDirection= "column";
@@ -15,3 +14,8 @@ function showSection(){
 function hideSection(){
     document.getElementById("section-colapsable").style.display = "none"
 }
+
+
+// function openChat(){}
+
+// function changeFont(){}}
