@@ -15,7 +15,19 @@ function hideSection(){
     document.getElementById("section-colapsable").style.display = "none"
 }
 
+//encontrar cards existentes
+document.querySelectorAll(".clickCard").forEach(card=>{
+    card.addEventListener('click', function(){
+        //recorrer DOM hasta llegar a card__name y cambiar fontWeight
+        card.childNodes[3].children[0].style.fontWeight = '400'
+    })
+})
 
-// function openChat(){}
+function showFiles(){
+    document.getElementById("files").style.display = "flex"
+    document.getElementById("files").style.flexDirection = "column"
+}
 
-// function changeFont(){}}
+function hideFiles(){
+    document.getElementById("files").style.display = "none"
+}
