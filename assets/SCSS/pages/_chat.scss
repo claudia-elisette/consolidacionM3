@@ -1,8 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
 
 main{
     display: flex;
     flex-direction: column;
-    
+    flex-grow: 1;
     @include respond-to($bp-lg){
         flex-direction: row;
     }
@@ -12,7 +16,6 @@ main{
     width: 100%;
 
     @include respond-to($bp-lg){
-        display: block;
         width: 19.5%;
         margin-right: 5px;
         min-width: 400px;
@@ -23,6 +26,7 @@ main{
 
 .section2{
     width: 100%;
+    flex-grow: 1;
 
     @include respond-to($bp-lg){
         width: 80%;

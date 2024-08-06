@@ -1,10 +1,10 @@
 .section{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 
     &__chat{
-        height: 86.1vh;
         display: none;
+        flex-grow: 1;
         padding-right: 10px;
         box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
         margin-top: 1vh;
@@ -17,7 +17,6 @@
 
     &__dropdown{
         width: 100%;
-        box-shadow: 1rem 1rem 1rem 0rem rgba(0,0,0,0.2);
         position: relative;
 
         &-btn{
@@ -38,6 +37,7 @@
             position: absolute;
             z-index: 2;
             background-color: white;
+            box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
         }
 
         @include respond-to($bp-lg){

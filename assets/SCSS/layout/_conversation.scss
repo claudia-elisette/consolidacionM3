@@ -1,7 +1,6 @@
 
 /*conversation*/
 .card--static{
-
     height: 60px;
     margin: 0;
     margin-top: 5px;
@@ -24,8 +23,8 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+        flex-grow: 1;
         width: 100%;
-        height: 91.5%;
         padding: 10px;
         background-image: url("../IMG/backround/backround2.avif") ;
     }
@@ -34,6 +33,7 @@
         align-self: center;
         text-align: center;
         width: 80px;
+        margin-bottom: 10px;
         border-radius: 5px;
         background-color: rgba(165, 161, 161, 0.541);
         
@@ -43,7 +43,7 @@
         align-self: flex-start;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
     }
 
     &__receiver{
@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 50%;
+        width: 100%;
     }
 
     &__bubble{

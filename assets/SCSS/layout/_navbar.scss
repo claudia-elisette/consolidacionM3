@@ -4,7 +4,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    height: 60px;
     width: 100%;
     background-color: $bear-brown;
 
@@ -16,7 +15,7 @@
         a{ 
             font-size: 2.5rem;
             font-weight: 600;
-            color: $sakura-pink;
+            color: $white;
             text-decoration: none;
         }
         
@@ -38,7 +37,7 @@
     &__item{
 
         a{
-           color: $sakura-pink;
+           color: $white;
            text-decoration: none;
            font-size: 2.1875rem;
            padding: 0.625rem;
@@ -64,7 +63,7 @@
 
         &-btn{
             background-color: $bear-brown;
-            color: $sakura-pink;
+            color: $white;
             align-self: flex-end;
             font-size: 25px;
             padding: 0.3125rem 0.625rem;
@@ -90,7 +89,7 @@
             box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
 
             a{
-                color: $sakura-pink;
+                color: $white;
                 text-decoration: none;
                 width: 100%;
                 text-align: right;
