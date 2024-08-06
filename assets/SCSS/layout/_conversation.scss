@@ -1,0 +1,147 @@
+
+/*conversation*/
+.card--static{
+
+    height: 60px;
+    margin: 0;
+    margin-top: 5px;
+
+    &:hover{
+        background-color: white;
+
+    }
+}
+
+.card__img--2{
+    width: 7%;
+    min-width: 70px;
+    text-align: start;
+}
+
+.section{
+
+    &__conversation{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
+        height: 91.5%;
+        padding: 10px;
+        background-image: url("../IMG/backround/backround2.avif") ;
+    }
+
+    &__date{
+        align-self: center;
+        text-align: center;
+        width: 80px;
+        border-radius: 5px;
+        background-color: rgba(165, 161, 161, 0.541);
+        
+    }
+
+    &__sender{
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &__receiver{
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+    }
+
+    &__bubble{
+        width: fit-content;
+        max-width: 80%;
+        padding: 10px 15px;
+        border-radius: 10px;
+        position: relative;
+
+        &::after{
+            
+            content: '';
+            position: absolute;
+            border-width: 10px;
+            border-style: solid;
+            
+        }
+
+        &-s{
+            background-color: $lake-blue-light;
+            align-self: flex-start;
+
+            &::after{
+                border-color: $lake-blue-light transparent transparent transparent;
+                top: 0;
+                left: -10px;
+            }
+        }
+
+        &-r{
+            background-color: $pond-green-light;
+            align-self: flex-end;
+
+            &::after{
+                border-color: $pond-green-light transparent transparent transparent;
+                top: 0;
+                right: -10px;
+            }
+        }
+
+        &Date{
+            width: fit-content;
+        }
+
+        
+    }
+
+
+
+
+    &__bar{
+        width: 100%;
+        margin-top: 5px;
+        background-color: white;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2) ;
+        border-radius: 20px;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+        list-style: none;
+    }
+
+    &__barIcon{
+        width: 10%;
+        max-width: 40px;
+        text-align: start;
+
+        a{
+            color:gray ;
+            font-size: 20px;
+        }
+    }
+
+    &__barInput{
+        width: 65%;
+        flex-grow: 1;
+
+        input{
+            width: 100%;
+            height: 1.875rem;
+            border-color: white;
+            border-style: none;
+            border-radius: 0.3125rem;
+        }
+    }
+
+    
+
+}

@@ -4,7 +4,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    height: 3.5rem;
+    height: 60px;
     width: 100%;
     background-color: $bear-brown;
 
@@ -54,11 +54,13 @@
 
     &__dropdown{
         width: 40%;
+        min-width: 200px;
         align-self: center;
         display: flex;
         flex-flow: column;
         align-items: flex-start;
         position: relative;
+        z-index: 3;
 
         &-btn{
             background-color: $bear-brown;
@@ -79,6 +81,8 @@
 
         &-content{
             display: none;
+            position: absolute;
+            top: 30px;
             background-color: $koi-red;
             width: 100%;
             padding: 0.3125rem;

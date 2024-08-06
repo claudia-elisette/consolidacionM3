@@ -1,13 +1,10 @@
 .card{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 10px;
-    margin: 5px;
     
     &__img{
-        width: 15%;
         text-align: center;
 
         img{ 
@@ -22,7 +19,6 @@
     &__main{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         width: 83%;
     }
 
@@ -46,10 +42,5 @@
     &__text{
         width: 100%;
     }
-
-    &:hover{
-        background-color: rgba(129, 125, 125, 0.514);
-    }
-
 
 }
